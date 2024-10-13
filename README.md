@@ -26,7 +26,10 @@ Procedure, to manually toggle between the two firmware partitions:
 - 3x Switch device power on for 2 seconds, then off again.
 - Switch device power on, the device should now boot to the alternative partition.
 
+
+
 <b>Installation Summary</b>
+
 When successfully booted into any of the two partitions, a triggered firmware update will flash the other, secondary partition. The partition that is currently booted, stays untouched.
 
 1. Connect the router to the internet.
