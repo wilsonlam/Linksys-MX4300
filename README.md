@@ -11,3 +11,17 @@ On Windows to Router:
 "pscp C:\Users\ADMIN\Downloads\filetotransfer.x root@192.168.1.1:remote_path/file_name"
 
 "pscp C:\Users\ADMIN\Downloads\filetotransfer.x root@192.168.1.1:remote_path/file_name"
+
+<b>Dual firmware partition</b>
+
+Supported by newer Linksys devices
+
+Most newer devices (mostly those with decent amount of flash ROM) have 2 independent firmware partitions. A usage strategy could be, to install OpenWrt only into one of the 2 partitions and leave the vendor firmware in the other partition. No further tools are required to toggle between the two partitions.
+
+Procedure, to manually toggle between the two firmware partitions:
+
+- Switch device power off.
+- 3x Switch device power on for 2 seconds, then off again.
+- Switch device power on, the device should now boot to the alternative partition.
+
+When successfully booted into any of the two partitions, a triggered firmware update will flash the other, secondary partition. The partition that is currently booted, stays untouched.
